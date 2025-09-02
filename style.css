@@ -6,7 +6,7 @@ body {
 
 .hero {
   position: relative;
-  /* makes hero not take up the entire page */
+  /* prevents hero to take up the entire page */
   height: 420px;
   overflow: hidden;
   box-shadow: 0 0 2px grey;
@@ -59,14 +59,24 @@ body {
   margin-bottom: 0px;
 }
 
-.cta {
+.primary-cta {
   margin-top: 10px;
   background-color: rgb(164, 88, 236);
   border: none;
   color: rgb(255, 255, 255);
   font-size: 14px;
   padding: 7px 10px;
-  border-radius: 2px;
+  border-radius: 5px;
+}
+
+.cta {
+  border: 2px solid rgb(164, 88, 236);
+  background-color: transparent;
+  padding: 7px 10px;
+  color: rgb(164, 88, 236);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  ;
 }
 
 .introduction {
@@ -90,10 +100,26 @@ body {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 0 5px grey;
+  box-shadow: 0 0 5px rgb(193, 193, 193);
   transition: 0.5s;
+}
+
+.card-description {
+  flex: 1;
+  /* make buttons align vertically */
+}
+
+.date-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  font-style: italic;
 }
 
 .card img {
@@ -102,10 +128,15 @@ body {
 }
 
 .card:hover {
-  transform: translate(0, -10px);
+  transform: translate(0, -5px);
   /* add card up movement on hover */
   background-color: rgb(247, 247, 247);
 }
+
+.card-title {
+  color: rgb(133, 115, 25);
+}
+
 
 /* mobile */
 @media only screen and (max-width: 500px) {
@@ -121,7 +152,7 @@ body {
   /* make cards more narrow to fit the screen size */
 
   .card:hover {
-    transform: translate(10px, 0);
+    transform: translate(5px, 0);
     /* add card movement to right side instead of up on hover */
   }
 }
@@ -134,9 +165,16 @@ body {
   }
 }
 
+/* wide-screen */
+@media only screen and (min-width: 1600px) {
+  .card-section {
+    grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+
+  }
+}
+
 footer {
   background-color: rgb(242, 242, 242);
-  width: 100%;
   padding: 20px;
   margin-top: 70px;
   display: flex;
