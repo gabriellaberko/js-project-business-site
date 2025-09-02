@@ -1,9 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* remove default space on the sides */
+}
+
 .hero {
   position: relative;
   /* makes hero not take up the entire page */
   height: 420px;
   overflow: hidden;
-  box-shadow: 0 0 5px grey;
+  box-shadow: 0 0 2px grey;
+  */
 }
 
 .hero-image {
@@ -55,11 +62,11 @@
 .cta {
   margin-top: 10px;
   background-color: rgb(164, 88, 236);
-  border: 2px solid rgb(144, 48, 195);
-  color: rgb(249, 249, 39);
+  border: none;
+  color: rgb(255, 255, 255);
   font-size: 14px;
   padding: 7px 10px;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 .introduction {
@@ -127,7 +134,12 @@
   }
 }
 
-/* TO DO: 
-- Set maximum amount of cards visible depending on screen size and make sure the box fits the size
-- Hide menu for smaller screen size 
-*/
+footer {
+  background-color: rgb(242, 242, 242);
+  width: 100%;
+  padding: 20px;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  color: rgb(110, 110, 110);
+}
