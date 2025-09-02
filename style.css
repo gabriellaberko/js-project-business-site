@@ -75,7 +75,7 @@
 
 .card-section {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
   /* make cards responsive */
   gap: 20px 30px;
   padding: 10px 30px;
@@ -87,12 +87,17 @@
   border-radius: 5px;
   box-shadow: 0 0 5px grey;
   transition: 0.5s;
+}
 
+.card img {
+  max-width: 100%;
+  height: auto;
 }
 
 .card:hover {
   transform: translate(0, -10px);
-  /*add card movement on hover */
+  /* add card up movement on hover */
+  background-color: rgb(247, 247, 247);
 }
 
 /* mobile */
@@ -103,10 +108,23 @@
 
   /* hide navbar */
   .card-section {
-    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
   }
 
   /* make cards more narrow to fit the screen size */
+
+  .card:hover {
+    transform: translate(10px, 0);
+    /* add card movement to right side instead of up on hover */
+  }
+}
+
+/* tablet */
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+
+  .card-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* TO DO: 
