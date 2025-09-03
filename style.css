@@ -2,12 +2,13 @@ body {
   margin: 0;
   padding: 0;
   /* remove default space on the sides */
+  background-color: rgba(234, 229, 222, 0.498);
 }
 
 .hero {
   position: relative;
   /* prevents hero to take up the entire page */
-  height: 420px;
+  height: 450px;
   overflow: hidden;
   box-shadow: 0 0 2px grey;
   */
@@ -34,6 +35,7 @@ body {
   position: relative;
   z-index: 1;
   /* appear on top of image */
+  color: white;
 }
 
 .nav-links {
@@ -44,7 +46,7 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .hero-content {
@@ -59,7 +61,8 @@ body {
   margin-bottom: 0px;
 }
 
-.primary-cta {
+.primary-cta,
+.events-button {
   margin-top: 10px;
   background-color: rgb(164, 88, 236);
   border: none;
@@ -67,6 +70,7 @@ body {
   font-size: 14px;
   padding: 7px 10px;
   border-radius: 5px;
+  box-shadow: 0 0 2px rgba(18, 18, 18, 0.533);
 }
 
 .cta {
@@ -96,6 +100,7 @@ body {
   /* make cards responsive */
   gap: 20px 30px;
   padding: 10px 30px;
+  margin-bottom: 20px;
   /* row, column gap */
 }
 
@@ -125,17 +130,33 @@ body {
 .card img {
   max-width: 100%;
   height: auto;
+  box-shadow: 0 0 2px grey;
 }
 
 .card:hover {
   transform: translate(0, -5px);
   /* add card up movement on hover */
-  background-color: rgb(247, 247, 247);
+  /*background-color: rgb(247, 247, 247);*/
+}
+
+.cta:hover {
+  background-color: rgba(212, 185, 238, 0.202);
 }
 
 .card-title {
-  color: rgb(133, 115, 25);
+  color: black;
 }
+
+.events-button {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
 
 
 /* mobile */
@@ -174,7 +195,7 @@ body {
 }
 
 footer {
-  background-color: rgb(242, 242, 242);
+  background-color: rgba(219, 215, 207, 0.544);
   padding: 20px;
   margin-top: 70px;
   display: flex;
