@@ -2,7 +2,8 @@ body {
   margin: 0;
   padding: 0;
   /* remove default space on the sides */
-  background-color: rgba(234, 229, 222, 0.498);
+  background-color: rgba(238, 234, 228, 0.438);
+  color: rgb(53, 51, 32);
 }
 
 .hero {
@@ -26,8 +27,9 @@ body {
 }
 
 .logo {
-  height: 180px;
-  width: auto;
+  width: 200px;
+  height: auto;
+  margin-top: 30px;
 }
 
 .navbar,
@@ -54,7 +56,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 20px;
+  padding: 0 50px;
 }
 
 .header-title {
@@ -63,11 +65,11 @@ body {
 
 .primary-cta,
 .events-button {
-  margin-top: 10px;
+  margin-top: 30px;
   background-color: rgb(164, 88, 236);
   border: none;
   color: rgb(255, 255, 255);
-  font-size: 14px;
+  font-size: 16px;
   padding: 7px 10px;
   border-radius: 5px;
   box-shadow: 0 0 2px rgba(18, 18, 18, 0.533);
@@ -94,20 +96,35 @@ body {
   /* always adds 20px on left and right */
 }
 
+.events-section {
+  background-color: rgba(222, 219, 213, 0.281);
+  box-shadow: 0 0 5px rgba(193, 193, 193, 0.48);
+  border-radius: 5px;
+  padding: 2px 12px 42px;
+  margin: 12px;
+}
+
+.card-section-title {
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  margin: 40px 40px;
+}
+
 .card-section {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
   /* make cards responsive */
   gap: 20px 30px;
   padding: 10px 30px;
   margin-bottom: 20px;
-  /* row, column gap */
 }
 
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgb(246, 244, 242);
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 5px rgb(193, 193, 193);
@@ -144,7 +161,7 @@ body {
 }
 
 .card-title {
-  color: black;
+  font-size: 16px;
 }
 
 .events-button {
@@ -156,8 +173,6 @@ body {
 a {
   text-decoration: none;
 }
-
-
 
 /* mobile */
 @media only screen and (max-width: 500px) {
@@ -175,6 +190,10 @@ a {
   .card:hover {
     transform: translate(5px, 0);
     /* add card movement to right side instead of up on hover */
+  }
+
+  .logo {
+    margin-top: 80px;
   }
 }
 
@@ -195,10 +214,8 @@ a {
 }
 
 footer {
-  background-color: rgba(219, 215, 207, 0.544);
   padding: 20px;
   margin-top: 70px;
   display: flex;
   justify-content: center;
-  color: rgb(110, 110, 110);
 }
