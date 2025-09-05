@@ -100,14 +100,14 @@ body {
   background-color: rgba(222, 219, 213, 0.281);
   box-shadow: 0 0 5px rgba(193, 193, 193, 0.48);
   border-radius: 5px;
-  padding: 2px 12px 42px;
+  padding: 2px 12px 2px;
   margin: 12px;
 }
 
 .card-section-title {
   display: flex;
   justify-content: center;
-  font-size: 22px;
+  font-size: 24px;
   margin: 40px 40px;
 }
 
@@ -167,7 +167,7 @@ body {
 .events-button {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  margin: 42px auto;
 }
 
 a {
