@@ -178,14 +178,13 @@ a {
 @media only screen and (max-width: 500px) {
   .navbar {
     display: none;
+    /* hide navbar */
   }
 
-  /* hide navbar */
   .card-section {
-    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    grid-template-columns: 1fr;
+    /* set to only 1 column */
   }
-
-  /* make cards more narrow to fit the screen size */
 
   .card:hover {
     transform: translate(5px, 0);
@@ -197,18 +196,11 @@ a {
   }
 }
 
-/* tablet */
-@media only screen and (min-width: 501px) and (max-width: 768px) {
-
-  .card-section {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
 /* wide-screen */
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1500px) {
   .card-section {
-    grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
 
   }
 }
