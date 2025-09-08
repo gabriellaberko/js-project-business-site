@@ -98,14 +98,17 @@
       <form class="sign-up-form" action="">
         <fieldset>
           <legend>Signup Form</legend>
-          <label class="text-field">First name
+          <label class="text-field">
+            <span>First name</span>
             <input type="text" name="first-name" placeholder="Emma">
           </label>
-          <label class="text-field">Last name
+          <label class="text-field">
+            <span>Last name</span>
             <input type="text" name="first-name" placeholder="Andersson">
           </label>
-          <label class="text-field">Email
-            <input type="email" name="email" placeholder="e.andersson@example.com">
+          <label class="text-field">
+            <span>Email</span>
+            <input type="email" name="email" placeholder="example@example.com">
           </label>
           <div class="wrapper-column">
             <p>What are you interested in?</p>
@@ -116,6 +119,7 @@
             </label>
             <label class="checkbox">Cycling
               <input type="checkbox" name="interest">
+              <span class="custom-checkbox"></span>
             </label>
             <label class="checkbox">Yoga
               <input type="checkbox" name="interest">
@@ -138,8 +142,8 @@
               <input type="radio" name="skill-level">Advanced
               </label>
             </div>
+            <button class="submit-button" type="submit">Sign up!</button>
         </fieldset>
-        <button type="submit">Sign up!</button>
       </form>
     </section>
   </main>

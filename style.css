@@ -177,13 +177,63 @@ a {
 
 .sign-up-form {
   max-width: 500px;
-  margin: 0 auto;
-  padding: 30px;
+  margin: 40px auto;
+
+}
+
+.sign-up-form fieldset {
+  background-color: rgb(250, 248, 247);
+  /*box-shadow: 3px 3px 0 rgb(193, 193, 193);*/
+  box-shadow: 4px 4px 2px rgba(193, 193, 193, 0.771),
+    0 0 0 transparent,
+    0 0 0 transparent;
+  border: 1px solid rgba(193, 193, 193, 0.771);
+  padding: 30px 20px;
+  border-radius: 5px;
 }
 
 .text-field {
   display: flex;
+  padding: 5px 0;
+  border-bottom: 1px solid rgb(231, 229, 219);
 }
+
+.text-field span {
+  width: 40%;
+}
+
+.text-field input {
+  margin-left: 7px;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+.sign-up-form p {
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+.checkbox,
+.radio-button {
+  margin-right: 12px;
+}
+
+.sign-up-form button {
+  display: flex;
+  margin: 40px auto 0;
+  background-color: rgb(164, 88, 236);
+  box-shadow: 3px 3px 2px rgba(193, 193, 193, 0.771),
+    0 0 0 transparent,
+    0 0 0 transparent;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 7px 20px;
+  border-radius: 5px;
+
+  /*box-shadow: 0 0 2px rgba(18, 18, 18, 0.533);*/
+}
+
 
 /* mobile */
 @media only screen and (max-width: 500px) {
