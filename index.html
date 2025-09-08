@@ -23,7 +23,7 @@
       <!--<h1 class="header-title">Active Circle</h1>-->
       <p>All the city's free social workouts—gathered in one place so you can stay active and make
         friends along the way.</p>
-      <button class="primary-cta">Sign up!</button>
+      <a href="#form"><button class="primary-cta">Sign up!</button></a>
     </div>
   </header>
   <main>
@@ -90,17 +90,21 @@
       </section>
       <a class="more-events" href="#"><button class="events-button">More events</button></a>
     </section>
-    <section class="form-section">
-      <form action="">
+    <section class="form-section" id="form">
+      <h2>Sign up to not miss out on new events!</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat ut officiis provident delectus rem tempora
+        dolor, soluta magnam accusamus. Assumenda sed beatae commodi quam autem, omnis mollitia culpa accusamus
+        exercitationem.</p>
+      <form class="sign-up-form" action="">
         <fieldset>
           <legend>Signup Form</legend>
-          <label> First name
+          <label class="text-field">First name
             <input type="text" name="first-name" placeholder="Emma">
           </label>
-          <label> Last name
+          <label class="text-field">Last name
             <input type="text" name="first-name" placeholder="Andersson">
           </label>
-          <label> Email
+          <label class="text-field">Email
             <input type="email" name="email" placeholder="e.andersson@example.com">
           </label>
           <div class="wrapper-column">
@@ -127,7 +131,7 @@
                 <input type="radio" name="skill-level" checked>All
               </label>
               <label class="radio-button">
-                <input type="radio" name="skill-level">Beginner friendly
+                <input type="radio" name="skill-level">Beginner
               </label>
               <input type="radio" name="skill-level">Intermediate
               </label>
