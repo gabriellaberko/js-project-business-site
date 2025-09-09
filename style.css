@@ -4,6 +4,7 @@ body {
   /* remove default space on the sides */
   background-color: rgba(238, 234, 228, 0.438);
   color: rgb(53, 51, 32);
+  font-family: "Libre Franklin", sans-serif;
 }
 
 .hero {
@@ -12,7 +13,6 @@ body {
   height: 450px;
   overflow: hidden;
   box-shadow: 0 0 2px grey;
-  */
 }
 
 .hero-image {
@@ -114,7 +114,7 @@ body {
   flex-direction: column;
   align-items: center;
   max-width: 900px;
-  margin: 30px auto;
+  margin: 50px auto;
   /* centers the container itself */
   padding: 0 30px;
   /* always adds 20px on left and right */
