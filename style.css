@@ -214,10 +214,128 @@ a {
   font-weight: 600;
 }
 
-.checkbox,
-.radio-button {
-  margin-right: 12px;
+/* styling for the parent/box of the checkbox */
+.checkbox {
+  position: relative;
+  padding-left: 25px;
+  margin: 10px 5px;
+  user-select: none;
 }
+
+/* remove default styling of the checkboxes */
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* style our custom checkboxes */
+.custom-checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 19px;
+  width: 19px;
+  background-color: #eee;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.checkbox:hover input~.custom-checkbox {
+  background-color: #ccc;
+}
+
+.checkbox input:checked~.custom-checkbox {
+  background-color: rgb(164, 88, 236);
+}
+
+/* The styling to be applied when custom-radio-button is checked */
+.custom-checkbox:after {
+  content: "";
+  position: absolute;
+  /* These values are dependent on the height and width set in .custom-checkbox */
+  width: 3px;
+  height: 6px;
+  top: 5px;
+  left: 7px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  /* To only make it visible when checked */
+  display: none;
+}
+
+.checkbox input:checked~.custom-checkbox:after {
+  display: block;
+}
+
+.checkbox input:focus+.custom-checkbox {
+  outline: rgba(118, 117, 119, 0.666) auto 1px;
+}
+
+/* styling for the parent/box of the radio buttons */
+.radio-button {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin: 10px 5px;
+}
+
+/* remove default styling */
+.radio-button input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* style our custom radio buttons */
+.custom-radio-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 19px;
+  width: 19px;
+  background-color: #eee;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.radio-button:hover input~.custom-radio-button {
+  background-color: #ccc;
+}
+
+.radio-button input:checked~.custom-radio-button {
+  background-color: rgb(164, 88, 236);
+}
+
+/* The styling to be applied when custom-radio-button is checked */
+.custom-radio-button:after {
+  content: "";
+  position: absolute;
+  /* These values are dependent on the height and width set in .custom-radio-button */
+  top: 6px;
+  left: 6px;
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  border-radius: 50%;
+  /* To only make it visible when checked */
+  display: none;
+}
+
+.radio-button input:checked~.custom-radio-button:after {
+  display: block;
+}
+
+.radio-button input:focus+.custom-radio-button {
+  outline: rgba(118, 117, 119, 0.666) auto 1px;
+}
+
+
 
 .sign-up-form button {
   display: flex;
