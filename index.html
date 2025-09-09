@@ -95,58 +95,59 @@
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat ut officiis provident delectus rem tempora
         dolor, soluta magnam accusamus. Assumenda sed beatae commodi quam autem, omnis mollitia culpa accusamus
         exercitationem.</p>
-      <form class="sign-up-form" action="">
+      <form class="sign-up-form" action="https://httpbin.org/anything" method="POST">
         <fieldset>
           <legend>Newsletter Sign up</legend>
           <label class="text-field">
             <span>First name</span>
-            <input type="text" name="first-name" placeholder="Emma">
+            <input type="text" name="first-name" placeholder="Emma" required>
           </label>
           <label class="text-field">
             <span>Last name</span>
-            <input type="text" name="first-name" placeholder="Andersson">
+            <input type="text" name="last-name" placeholder="Andersson" required>
           </label>
           <label class="text-field">
             <span>Email</span>
-            <input type="email" name="email" placeholder="example@example.com">
+            <input type="email" name="email" placeholder="example@example.com" required>
           </label>
           <div class="wrapper-column">
             <p>What are you interested in?</p>
           </div>
           <div class="wrapper-row">
             <label class="checkbox">Running
-              <input type="checkbox" name="interest" checked>
+              <input type="checkbox" name="interest" value="running" checked>
               <span class="custom-checkbox"></span>
             </label>
             <label class="checkbox">Cycling
-              <input type="checkbox" name="interest">
+              <input type="checkbox" name="interest" value="cycling">
               <span class="custom-checkbox"></span>
             </label>
             <label class="checkbox">Yoga
-              <input type="checkbox" name="interest">
+              <input type="checkbox" name="interest" value="yoga">
               <span class="custom-checkbox"></span>
             </label>
             <label class="checkbox">Mobility
-              <input type="checkbox" name="interest">
+              <input type="checkbox" name="interest" value="mobility">
               <span class="custom-checkbox"></span>
             </label>
-            <div class="wrapper-column">
-              <p>What is your skill level?</p>
-            </div>
-            <div class="wrapper-row">
-              <label class="radio-button">Beginner
-                <input type="radio" name="skill-level" checked> <span class="custom-radio-button"></span>
-              </label>
-              <label class="radio-button">Intermediate
-                <input type="radio" name="skill-level">
-                <span class="custom-radio-button"></span>
-              </label>
-              <label class="radio-button">Advanced
-                <input type="radio" name="skill-level">
-                <span class="custom-radio-button"></span>
-              </label>
-            </div>
-            <button class="submit-button" type="submit">Sign me up!</button>
+          </div>
+          <div class="wrapper-column">
+            <p>What is your skill level?</p>
+          </div>
+          <div class="wrapper-row">
+            <label class="radio-button">Beginner
+              <input type="radio" name="skill-level" value="beginner" checked> <span class="custom-radio-button"></span>
+            </label>
+            <label class="radio-button">Intermediate
+              <input type="radio" name="skill-level" value="intermediate">
+              <span class="custom-radio-button"></span>
+            </label>
+            <label class="radio-button">Advanced
+              <input type="radio" name="skill-level" value="advanced">
+              <span class="custom-radio-button"></span>
+            </label>
+          </div>
+          <button class="submit-button" type="submit">Sign me up!</button>
         </fieldset>
       </form>
     </section>
