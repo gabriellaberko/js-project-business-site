@@ -108,16 +108,48 @@ body {
   background-color: rgb(154, 82, 220);
 }
 
-.introduction,
-.form-section {
+.introduction {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  max-width: 900px;
-  margin: 50px auto;
-  /* centers the container itself */
-  padding: 0 30px;
-  /* always adds 20px on left and right */
+  margin: 60px;
+  gap: 52px;
+  position: relative;
+}
+
+
+.intro-text {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.circle-bg {
+  width: 250px;
+  height: 250px;
+  background: url("intro-image.jpg") center/cover no-repeat;
+  border-radius: 50% 70% 30% 50% / 60% 40% 70% 30%;
+  /* irregular rounded corners */
+  position: relative;
+  /* so ::before stays attached */
+  z-index: 1;
+  /* image above blob */
+}
+
+/* blob behind image */
+.circle-bg::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  /* shift a bit outside */
+  left: -20px;
+  width: 300px;
+  height: 280px;
+  background: #cac5bbb0;
+  border-radius: 65% 35% 75% 25% / 55% 70% 30% 60%;
+  z-index: -1;
+  /* blob stays behind image */
+  opacity: 0.5;
 }
 
 .events-section {
@@ -125,7 +157,7 @@ body {
   box-shadow: 0 0 5px rgba(193, 193, 193, 0.48);
   border-radius: 5px;
   padding: 2px 12px 2px;
-  margin: 12px;
+  margin: 100px 12px 60px;
 }
 
 .card-section-title {
@@ -192,6 +224,16 @@ body {
 
 a {
   text-decoration: none;
+}
+
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 30px;
 }
 
 .sign-up-form {
@@ -364,6 +406,14 @@ a {
 }
 
 
+footer {
+  padding: 20px;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+
 /* mobile */
 @media only screen and (max-width: 500px) {
   .navbar {
@@ -386,18 +436,38 @@ a {
   }
 }
 
+@media only screen and (max-width: 649px) {
 
-/* wide-screen */
-@media only screen and (min-width: 1500px) {
-  .card-section {
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  .introduction {
+    flex-direction: column;
+  }
 
+  .card:hover {
+    transform: translate(5px, 0);
+    /* add card movement to right side instead of up on hover */
+  }
+
+  .circle-bg {
+    width: 350px;
+    height: 220px;
+    border-radius: 40% 35% 80% 40% / 50% 70% 30% 60%;
+    margin-top: 20px;
+  }
+
+  .circle-bg::before {
+    top: -25px;
+    left: -45px;
+    width: 420px;
+    height: 270px;
+    border-radius: 25% 75% 35% 65% / 85% 55% 70% 20%;
   }
 }
 
-footer {
-  padding: 20px;
-  margin-top: 70px;
-  display: flex;
-  justify-content: center;
+
+/* wide-screen */
+@media only screen and (min-width: 1500px) {
+
+  .card-section {
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  }
 }
