@@ -64,15 +64,29 @@ body {
 }
 
 .primary-cta,
-.events-button {
-  margin-top: 30px;
+.events-button,
+.sign-up-form button {
   background-color: rgb(164, 88, 236);
   border: none;
   color: rgb(255, 255, 255);
-  font-size: 16px;
-  padding: 7px 10px;
   border-radius: 5px;
-  box-shadow: 0 0 2px rgba(18, 18, 18, 0.533);
+}
+
+.primary-cta {
+  margin-top: 30px;
+  padding: 10px 24px;
+  font-size: 16px;
+  box-shadow: 3px 3px 2px rgba(38, 38, 38, 0.544),
+    0 0 0 transparent,
+    0 0 0 transparent;
+}
+
+.events-button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  box-shadow: 3px 3px 2px rgba(193, 193, 193, 0.771),
+    0 0 0 transparent,
+    0 0 0 transparent;
 }
 
 .cta {
@@ -82,7 +96,16 @@ body {
   color: rgb(164, 88, 236);
   border-radius: 5px;
   margin-bottom: 10px;
-  ;
+}
+
+.cta:hover {
+  background-color: rgba(212, 185, 238, 0.202);
+}
+
+.primary-cta:hover,
+.events-button:hover,
+.sign-up-form button:hover {
+  background-color: rgb(154, 82, 220);
 }
 
 .introduction,
@@ -155,10 +178,6 @@ body {
   transform: translate(0, -5px);
   /* add card up movement on hover */
   /*background-color: rgb(247, 247, 247);*/
-}
-
-.cta:hover {
-  background-color: rgba(212, 185, 238, 0.202);
 }
 
 .card-title {
@@ -335,21 +354,13 @@ a {
   outline: rgba(118, 117, 119, 0.666) auto 1px;
 }
 
-
-
 .sign-up-form button {
   display: flex;
   margin: 40px auto 0;
-  background-color: rgb(164, 88, 236);
+  padding: 7px 20px;
   box-shadow: 3px 3px 2px rgba(193, 193, 193, 0.771),
     0 0 0 transparent,
-    0 0 0 transparent;
-  border: none;
-  color: rgb(255, 255, 255);
-  padding: 7px 20px;
-  border-radius: 5px;
-
-  /*box-shadow: 0 0 2px rgba(18, 18, 18, 0.533);*/
+    0 0 0 transparent
 }
 
 
