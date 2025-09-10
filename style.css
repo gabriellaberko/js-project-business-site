@@ -124,7 +124,7 @@ body {
   z-index: 1;
 }
 
-.circle-bg {
+.circle-image {
   width: 250px;
   height: 250px;
   background: url("intro-image.jpg") center/cover no-repeat;
@@ -137,11 +137,10 @@ body {
 }
 
 /* blob behind image */
-.circle-bg::before {
+.circle-image::before {
   content: "";
   position: absolute;
   top: -20px;
-  /* shift a bit outside */
   left: -20px;
   width: 300px;
   height: 280px;
@@ -160,17 +159,14 @@ body {
   margin: 100px 12px 60px;
 }
 
-.card-section-title {
-  display: flex;
-  justify-content: center;
-  font-size: 24px;
+.events-section h2 {
+  text-align: center;
   margin: 40px 40px;
 }
 
 .card-section {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
-  /* make cards responsive */
   gap: 20px 30px;
   padding: 10px 30px;
   margin-bottom: 20px;
@@ -192,7 +188,7 @@ body {
   /* make buttons align vertically */
 }
 
-.date-time {
+.location-date-box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -209,7 +205,7 @@ body {
 .card:hover {
   transform: translate(0, -5px);
   /* add card up movement on hover */
-  /*background-color: rgb(247, 247, 247);*/
+  background-color: rgb(247, 246, 246);
 }
 
 .card-title {
@@ -239,12 +235,10 @@ a {
 .sign-up-form {
   max-width: 500px;
   margin: 40px auto;
-
 }
 
 .sign-up-form fieldset {
   background-color: rgb(250, 248, 247);
-  /*box-shadow: 3px 3px 0 rgb(193, 193, 193);*/
   box-shadow: 4px 4px 2px rgba(193, 193, 193, 0.771),
     0 0 0 transparent,
     0 0 0 transparent;
@@ -282,7 +276,7 @@ a {
   margin: 10px 5px;
   user-select: none;
 }
-
+/*
 /* remove default styling of the checkboxes */
 .checkbox input {
   position: absolute;
@@ -316,7 +310,6 @@ a {
 .custom-checkbox:after {
   content: "";
   position: absolute;
-  /* These values are dependent on the height and width set in .custom-checkbox */
   width: 3px;
   height: 6px;
   top: 5px;
@@ -377,7 +370,6 @@ a {
 .custom-radio-button:after {
   content: "";
   position: absolute;
-  /* These values are dependent on the height and width set in .custom-radio-button */
   top: 6px;
   left: 6px;
   width: 7px;
@@ -395,7 +387,7 @@ a {
 .radio-button input:focus+.custom-radio-button {
   outline: rgba(118, 117, 119, 0.666) auto 1px;
 }
-
+*/
 .sign-up-form button {
   display: flex;
   margin: 40px auto 0;
@@ -414,7 +406,7 @@ footer {
 }
 
 
-/* mobile */
+/* specific styling for small screen */
 @media only screen and (max-width: 500px) {
   .navbar {
     display: none;
@@ -423,7 +415,7 @@ footer {
 
   .card-section {
     grid-template-columns: 1fr;
-    /* set to only 1 column */
+    /* limit to 1 column */
   }
 
   .card:hover {
@@ -447,14 +439,14 @@ footer {
     /* add card movement to right side instead of up on hover */
   }
 
-  .circle-bg {
+  .circle-image {
     width: 350px;
     height: 220px;
     border-radius: 40% 35% 80% 40% / 50% 70% 30% 60%;
     margin-top: 20px;
   }
 
-  .circle-bg::before {
+  .circle-image::before {
     top: -25px;
     left: -45px;
     width: 420px;
@@ -464,7 +456,7 @@ footer {
 }
 
 
-/* wide-screen */
+/* specific styling for wide-screen */
 @media only screen and (min-width: 1500px) {
 
   .card-section {
