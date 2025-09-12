@@ -387,7 +387,7 @@ a {
 .radio-button input:focus+.custom-radio-button {
   outline: rgba(118, 117, 119, 0.666) auto 1px;
 }
-*/
+
 .sign-up-form button {
   display: flex;
   margin: 40px auto 0;
