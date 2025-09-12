@@ -264,6 +264,12 @@ a {
   background-color: transparent;
 }
 
+.text-field input:focus {
+  border: 2px solid rgb(164, 88, 236);
+  outline: none;
+}
+
+
 .sign-up-form p {
   margin-top: 30px;
   font-weight: 600;
@@ -430,6 +436,7 @@ footer {
   .circle-image {
     display: none;
   }
+
 
 }
 
