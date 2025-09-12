@@ -426,6 +426,11 @@ footer {
   .logo {
     margin-top: 80px;
   }
+
+  .circle-image {
+    display: none;
+  }
+
 }
 
 @media only screen and (max-width: 649px) {
