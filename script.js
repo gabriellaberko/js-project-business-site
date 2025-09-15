@@ -8,25 +8,16 @@ When you click, all links in your navbar become visible, and when you click agai
 */
 
 
-/* create variables for hamburger menu icon and nav links */ 
-const hamburgerIcon = document.getElementById("icon")
-
-/*const navLinks = document.getElementById("links")*/
-
+/* create variable for hamburger menu icon and nav links */ 
+const hamburgerIcon = document.getElementById("hamburgerIcon")
+const crossIcon = document.getElementById("crossIcon")
 const navBar = document.getElementById("nav")
-
-/* display nav links when hamburger menu icon is clicked */ 
-/*hamburgerIcon.onclick = () => {
-   navLinks.style.display = "block";
-   navBar.style.backgroundColor = "#eeeeee21"
-}*/
-
-/* TO-DO: hide the nav links again when links have been clicked (but only for mobile) or when you click on icon again */
+const menuIcon = document.getElementById("menuIcon")
+const navLinks = document.getElementById("links");
 
 
 
-function myFunction() {
-  const navLinks = document.getElementById("links");
+function expandCollapseHamburgerMenu() {
   if (navLinks.style.display === "block") {
     navLinks.style.display = "none";
   } else {
@@ -34,5 +25,15 @@ function myFunction() {
   }
 }
 
-hamburgerIcon.onclick = () => myFunction();
+function changeMenuIcon() {
+  hamburgerIcon.classList.toggle("hidden");
+  crossIcon.classList.toggle("hidden");
+
+}
+
+menuIcon.onclick = () => {
+  expandCollapseHamburgerMenu();
+  changeMenuIcon();
+}
+
 

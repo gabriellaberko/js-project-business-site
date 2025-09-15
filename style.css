@@ -44,7 +44,16 @@ body {
   width: 50px;
   margin: 18px;
   display: none;
+}
 
+.cross-icon {
+  width: 50px;
+  margin: 18px;
+}
+
+.hidden {
+  display: none !important;
+  /* marking it important so it has higher importance than the styling in media query. This to make classList toggle in JS to work */
 }
 
 .nav-links {
