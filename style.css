@@ -40,6 +40,11 @@ body {
   color: white;
 }
 
+.navbar {
+  cursor: pointer;
+  padding: 7px;
+}
+
 .hamburger-icon {
   width: 50px;
   margin: 18px;
@@ -435,9 +440,6 @@ footer {
 
 /* specific styling for small screen */
 @media only screen and (max-width: 500px) {
-  .navbar {
-    cursor: pointer;
-  }
 
   .menu-icon {
     display: flex;
@@ -463,10 +465,14 @@ footer {
   .nav-links {
     flex-direction: column;
     width: 70px;
-    padding: 7px 7px 16px 16px;
+    padding: 0 7px 16px 16px;
     margin-left: 5px;
     /* hide nav links */
     display: none;
+  }
+
+  .nav-links li {
+    margin-top: 7px;
   }
 
   .hero {
@@ -476,7 +482,7 @@ footer {
   }
 
   .hero-content {
-    margin: 0px 20px 120px 20px;
+    margin: 0px 20px 100px 20px;
   }
 
   .card-section {
