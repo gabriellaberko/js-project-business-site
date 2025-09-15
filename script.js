@@ -8,7 +8,14 @@ When you click, all links in your navbar become visible, and when you click agai
 */
 
 
-/* TO-DO: create variable for hamburger icon */ 
+/* create variables for hamburger menu icon and nav links */ 
 const hamburgerIcon = document.getElementById("icon")
 
-/* TO-DO: use onclick event for hamburger icon - nav links should expand and have a background color set */ 
+const navLinks = document.getElementById("links")
+
+/* display nav links when hamburger menu icon is clicked */ 
+hamburgerIcon.onclick = () => {
+   navLinks.style.display = "block";
+}
+
+/* TO-DO: hide the nav links again when links have been clicked (but only for mobile) or when you click on icon again */
