@@ -40,6 +40,13 @@ body {
   color: white;
 }
 
+.hamburger-icon {
+  width: 50px;
+  margin: 18px;
+  display: none;
+
+}
+
 .nav-links {
   display: flex;
   gap: 24px;
@@ -415,8 +422,38 @@ footer {
 /* specific styling for small screen */
 @media only screen and (max-width: 500px) {
   .navbar {
+    width: 100px;
+    margin-left: 12px;
+    cursor: pointer;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  .hamburger-icon:hover {
+    background-color: #12111229;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 70px;
+    padding: 7px 7px 16px 16px;
+    margin-left: 5px;
+    /* hide nav links */
     display: none;
-    /* hide navbar */
+  }
+
+  .hero {
+    display: flex;
+    gap: 0px;
+    
+  }
+
+  .hero-content {
+    padding: 0;
+    margin: 0 20px;
+  /* TO-DO: make responsive */
   }
 
   .card-section {
@@ -429,14 +466,10 @@ footer {
     /* add card movement to right side instead of up on hover */
   }
 
-  .logo {
-    margin-top: 80px;
-  }
 
   .circle-image {
     display: none;
   }
-
 
 }
 
