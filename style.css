@@ -51,6 +51,11 @@ body {
   margin: 18px;
 }
 
+.hamburger-logo {
+  width: 120px;
+  display: none;
+}
+
 .hidden {
   display: none !important;
   /* marking it important so it has higher importance than the styling in media query. This to make classList toggle in JS to work */
@@ -431,9 +436,20 @@ footer {
 /* specific styling for small screen */
 @media only screen and (max-width: 500px) {
   .navbar {
-    width: 100px;
-    margin-left: 12px;
     cursor: pointer;
+  }
+
+  .menu-icon {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .hamburger-logo{
+    display: block;
   }
 
   .hamburger-icon {
@@ -454,15 +470,13 @@ footer {
   }
 
   .hero {
-    display: flex;
-    gap: 0px;
-    
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; 
   }
 
   .hero-content {
-    padding: 0;
-    margin: 0 20px;
-  /* TO-DO: make responsive */
+    margin: 0px 20px 120px 20px;
   }
 
   .card-section {

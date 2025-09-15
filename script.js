@@ -25,10 +25,10 @@ function expandCollapseHamburgerMenu() {
   }
 }
 
+/* add/remove the CSS for the class hidden (which is display: none) to the different menu icons */
 function changeMenuIcon() {
   hamburgerIcon.classList.toggle("hidden");
   crossIcon.classList.toggle("hidden");
-
 }
 
 menuIcon.onclick = () => {
