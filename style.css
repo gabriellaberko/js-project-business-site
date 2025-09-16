@@ -261,8 +261,9 @@ a {
 }
 
 .modal-overlay .cross-icon {
-  width: 70px;
+  width: 60px;
   align-self: end;
+  margin: 5px;
 }
 
 .modal {
@@ -273,13 +274,14 @@ a {
   z-index: 1; /* sit on top */
   left: 10%;
   right: 10%;
-  height: 70vh;
+  height: 80vh;
   top: 0;
-  margin: 100px auto;
+  margin: 70px auto;
   overflow: auto; /* enable scroll if needed */
   border-radius: 5px;
   background-color: rgb(247, 244, 241);
   padding: 20px;
+  max-width: 700px;
 }
 
 .modal img {
