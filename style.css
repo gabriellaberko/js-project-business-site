@@ -458,13 +458,9 @@ footer {
     display: block;
   }
 
-  .hamburger-icon:hover {
-    background-color: #12111229;
-  }
-
   .nav-links {
     flex-direction: column;
-    width: 70px;
+    width: 90%;
     padding: 0 7px 16px 16px;
     margin-left: 5px;
     /* hide nav links */
@@ -473,6 +469,7 @@ footer {
 
   .nav-links li {
     margin-top: 7px;
+    border-bottom: 1px solid #f9f7f36b;
   }
 
   .hero {

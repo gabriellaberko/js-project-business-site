@@ -1,7 +1,6 @@
-const hamburgerIcon = document.getElementById("hamburgerIcon")
-const crossIcon = document.getElementById("crossIcon")
-const navBar = document.getElementById("nav")
-const menuIcon = document.getElementById("menuIcon")
+const hamburgerIcon = document.getElementById("hamburgerIcon");
+const crossIcon = document.getElementById("crossIcon");
+const navBar = document.getElementById("nav");
 const navLinks = document.getElementById("links");
 
 function expandCollapseHamburgerMenu() {
