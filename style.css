@@ -115,7 +115,7 @@ body {
     0 0 0 transparent;
 }
 
-.cta {
+.card-button {
   border: 2px solid rgb(164, 88, 236);
   background-color: transparent;
   padding: 7px 10px;
@@ -124,7 +124,7 @@ body {
   margin-bottom: 10px;
 }
 
-.cta:hover {
+.card-button:hover {
   background-color: rgba(212, 185, 238, 0.202);
 }
 
@@ -242,6 +242,55 @@ body {
   display: flex;
   justify-content: center;
   margin: 42px auto;
+}
+
+.modal-overlay {
+  display: flex;
+  flex-direction: column;
+  position: fixed; /* stay in place */
+  z-index: 1; /* sit on top */
+  left: 0;
+  top: 0;
+  width: 100vw; /* full width */
+  height: 100vh; /* full height */
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-overlay .cross-icon {
+  width: 70px;
+  align-self: end;
+}
+
+.modal {
+  position: fixed; /* stay in place */
+  z-index: 1; /* sit on top */
+  left: 10%;
+  right: 10%;
+  height: 70vh;
+  top: 0;
+  margin: 100px auto;
+  overflow: auto; /* enable scroll if needed */
+  border-radius: 5px;
+  background-color: rgb(246, 244, 242);
+  padding: 20px;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 20px 50px 20px;
+}
+
+.modal img {
+  width: 70%;
+  box-shadow: 0 0 2px grey;
+}
+
+.modal h3 {
+  font-size: x-large;
 }
 
 a {

@@ -73,7 +73,16 @@
     <section class="events-section" id="events">
       <h2>Current events</h2>
       <section class="card-section">
-        <div class="card">
+        <div class="modal-overlay hidden" id="modalOverlay">
+          <img 
+          class="cross-icon" 
+          id="modalCrossIcon" 
+          src="./burger-menu-cross-white.svg" alt="cross menu icon">
+          <div class="modal" id="modalPopup">
+            <div class="modal-content" id="modalContent"></div>
+          </div>
+        </div>
+        <div class="card" id="card">
           <h3 class="card-title">Thursday Run Club</h3>
           <img
             src="./group-run.jpeg"
@@ -84,9 +93,9 @@
               <p>📍 Mariatorget, Stockholm <br> 🕐 18.00 every Thursday</p>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.</p>
+            dolore magna aliqua.</p>
           </div>
-          <button class="cta">Read more</button>
+          <button class="card-button">Read more</button>
         </div>
         <div class="card">
           <h3 class="card-title">Vinyasa Flow Mornings</h3>
@@ -101,7 +110,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua.</p>
           </div>
-          <button class="cta">Read more</button>
+          <button class="card-button">Read more</button>
         </div>
         <div class="card">
           <h3 class="card-title">Tuesday Run Club - Cruisers (Slow)</h3>
@@ -116,7 +125,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua.</p>
           </div>
-          <button class="cta">Read more</button>
+          <button class="card-button">Read more</button>
         </div>
         <div class="card">
           <h3 class="card-title">Stretch & Mobility</h3>
@@ -132,7 +141,7 @@
               eiusmod tempor incididunt ut labore et
               dolore magna aliqua.</p>
           </div>
-          <button class="cta">Read more</button>
+          <button class="card-button">Read more</button>
         </div>
       </section>
       <a class="more-events" href="#">
