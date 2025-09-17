@@ -3,6 +3,7 @@ body {
   padding: 0;
   /* remove default space on the sides */
   background-color: rgba(238, 234, 228, 0.438);
+  /*background-color: rgba(248, 248, 248, 0.94);*/
   color: rgb(53, 51, 32);
   font-family: "Libre Franklin", sans-serif;
 }
@@ -505,9 +506,15 @@ footer {
     display: block;
   }
 
+  .navbar {
+    height: 100%;
+    width: 100px;
+  }
+
   .nav-links {
     flex-direction: column;
-    width: 90%;
+    width: 65%;
+    height: 100%;
     padding: 0 7px 16px 16px;
     margin-left: 5px;
     /* hide nav links */
@@ -519,13 +526,21 @@ footer {
     border-bottom: 1px solid #f9f7f36b;
   }
 
+  .nav-links a {
+    /*color: rgb(53, 51, 32);*/
+    font-weight: 500;
+  }
+
   .hero {
       display: flex;
       flex-direction: column;
   }
 
   .hero-content {
-    margin: 50px 12px;
+    margin: 100px auto;
+    position: absolute;
+    /* prevent from pushing the hero content below the hero image */
+    z-index: 0;
   }
 
   .card-section {

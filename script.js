@@ -17,7 +17,7 @@ function expandCollapseHamburgerMenu() {
     navBar.style.backgroundColor = "transparent";
   } else {
     navLinks.style.display = "block";
-    navBar.style.backgroundColor = "#eeeeee21"; 
+    navBar.style.backgroundColor = "rgba(33, 32, 23, 0.817)";
   }
 }
 
