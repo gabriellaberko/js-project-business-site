@@ -27,6 +27,12 @@ function changeMenuIcon() {
   crossIcon.classList.toggle("hidden");
 };
 
+menuIcon.addEventListener("click", () => {
+  expandCollapseHamburgerMenu();
+  changeMenuIcon();
+});
+
+
 function openCloseModal() {
   modalOverlay.classList.toggle("hidden");
 };
@@ -41,11 +47,6 @@ function showCardInModal(clickedButton) {
     // remove the card's inital ("read more") button
     modalContent.querySelector(".card-button").remove();
 };
-
-menuIcon.addEventListener("click", () => {
-  expandCollapseHamburgerMenu();
-  changeMenuIcon();
-});
 
 /* call the funtions on click for every of the card buttons */
 cardButtons.forEach((cardButton) => {
