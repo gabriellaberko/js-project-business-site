@@ -91,7 +91,7 @@ a {
 }
 
 .hero-content p {
-    margin-bottom: 36px;
+  margin-bottom: 36px;
 }
 
 .header-title {
@@ -572,6 +572,7 @@ footer {
 @media only screen and (min-width: 1500px) {
 
   .card-section {
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
   }
 }
