@@ -229,7 +229,6 @@ a {
 .modal-overlay .cross-icon {
   width: 60px;
   align-self: end;
-  margin: 5px;
 }
 
 .modal {
@@ -565,6 +564,7 @@ footer {
     transform: translate(5px, 0);
     /* add card movement to right side instead of up on hover */
   }
+
 }
 
 
